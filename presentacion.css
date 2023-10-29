@@ -39,7 +39,9 @@ span{
     font-size: 25px;
     border-radius: 25px;
 }
-
+.menu2 a:hover{
+    cursor:crosshair;
+}
 
 section img{
     transition: .5s ease;

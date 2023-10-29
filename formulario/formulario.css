@@ -1,0 +1,43 @@
+.user{
+    margin: 0 auto;
+}
+
+body{
+    background: linear-gradient(to top, #ff99ff 10%, #66ccff 91%);
+    background-attachment: fixed;
+}
+.imguser{
+    border: solid 5px;
+    border-radius: 50%;
+    width: 15%;
+    margin: 3%;
+    filter: drop-shadow(-50px 30px 10px rgba(0,0,0,0.5))
+}
+.formulario{
+    border: solid;
+    border-radius: 15px;
+    padding: 15px;
+}
+input{
+    border: solid;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: transparent;
+
+}
+input::placeholder{
+    color: black;
+}
+#menu{
+    border: solid;
+    border-radius: 15px;
+    margin: 15px;
+    background-color: rgb(0, 208, 255);
+    padding: 15px;
+}
+#login{
+    border: solid;
+    border-radius: 15px;
+    background-color: rgb(255, 89, 0);
+    padding: 15px;
+}
