@@ -1,0 +1,57 @@
+.logo{
+    width: 5%;
+    border-radius: 50%;
+}
+.div1{
+    padding: 2%;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+}
+.user{
+    width: 30%;
+}
+
+span{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 70ch;
+
+    animation: typing 5s steps(80),
+    blink 1s infinite step-end alternate;
+
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from {width: 0}
+}
+@keyframes blink{
+    50% {border-color: transparent;}
+}
+
+.menu2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-align: center;
+    background-color: rgb(214, 232, 247);
+    font-size: 25px;
+    border-radius: 25px;
+}
+
+
+section img{
+    transition: .5s ease;
+    opacity: .5;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.logo3{
+width: 25%;
+margin: 15px;
+}
