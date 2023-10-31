@@ -7,13 +7,14 @@ body{
     background-attachment: fixed;
 }
 .imguser{
-    border: solid 5px;
+    border: solid;
     border-radius: 50%;
-    width: 15%;
-    margin: 3%;
+    width: 20%;
+    margin: 5%;
     filter: drop-shadow(-50px 30px 10px rgba(0,0,0,0.5))
 }
 .formulario{
+    margin: 0 auto;
     border: solid;
     border-radius: 15px;
     padding: 15px;
@@ -23,6 +24,7 @@ input{
     border-radius: 15px;
     padding: 10px;
     background-color: transparent;
+    text-align: center;
 
 }
 input::placeholder{

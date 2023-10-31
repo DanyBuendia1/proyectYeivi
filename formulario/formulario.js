@@ -2,9 +2,9 @@ let Users = JSON.parse(localStorage.getItem("registros"));
 let registros =[];
 
 if(Users == null){
-    registros = [];
+   let registros = [];
 }else{
-    registros=Users;
+    Users = registros;
 }
 
 let nombre = document.getElementById("nombre").value;
@@ -48,7 +48,7 @@ function validar(){
     let validador = document.getElementById("validador").value;
     
     let validarEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
-    if(this.nombre == "" || this.correo == "" || this.contraseña == ""|| this.validador==""){
+    if(this.nombre.value == "" || this.correo.value == "" || this.contraseña.value == ""|| this.validador.value==""){
         alert("Se requiere llenar todos los campos");
     }else if(validarEmail.test(this.correo.value) === false){
         alert("El correo que ingresaste no es valido!!!");
@@ -70,5 +70,7 @@ function almacenar(){
 
     registros.push(datos);
     localStorage.setItem("Users" , JSON.stringify(registros));
+    alert('tus datos fueron guardados exitosamente!!');
+    location.reload();
 }
 // #####################################################

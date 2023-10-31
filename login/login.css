@@ -1,13 +1,22 @@
 body{
     background: linear-gradient(to left, #ffff66 10%, #ffcccc 91%);
 }
-.user-img{
+
+.img{
+text-align: center;
+margin: 25px;
+}
+.img-user{
     border: solid 5px;
     border-radius: 50%;
-    margin: 10%;
-    width: 50%;
+    width: 30%;
+    height: 30%;
+    margin: 3%;
+    filter: drop-shadow(-50px 30px 10px rgba(0,0,0,0.5))
 }
 .formulario{
+    margin: 0 auto;
+    text-align: center;
     border: solid 3px;
     padding: 3%;
     border-radius: 15px;
