@@ -1,3 +1,5 @@
+let contador=0;
+let alerta = document.getElementById("alerta");
 let correo = document.getElementById("correo").value;
 let contraseña = document.getElementById("contraseña").value;
 
@@ -23,8 +25,25 @@ function validacion(){
     
     for(let i =0; i<User.length; i++){
         if (User[i].email == this.correo.value && User[i].password == this.contraseña.value){
-            window.location="../catalogo/catalogo.html"
+            let datos ={
+                name : User[i].name
+            }
+            sessionStorage.setItem("sesion_abierta", JSON.stringify(datos));
+            window.location="../catalogo/catalogo.html";
         }
     }
+    contador++;
+    this.alerta.innerHTML =`¡¡¡Las credenciales no son correctas!!! Numero de intentos ${contador} de 3`
+    if(contador ===3){
+        this.correo.disabled = true;
+        this.contraseña.disabled = true;
 
+        setTimeout(() => {
+            this.correo.disabled = false;
+            this.contraseña.disabled = false;
+            contador=0;
+            alert("el login se desbloque correctamente")
+        }, 8000);
+    }
 }
+

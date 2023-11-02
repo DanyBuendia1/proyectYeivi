@@ -1,12 +1,13 @@
 let registros =[];
-let Users = JSON.parse(localStorage.getItem("registros"));
-console.log(JSON.parse(localStorage.getItem("registros")));
+let Users = JSON.parse(localStorage.getItem("Users"));
+
 if(Users == null){
-   Users = registros;
+    Users = registros;
 }else{
     registros = Users;
 }
-console.log(Users);
+
+console.log(Users)
 let nombre = document.getElementById("nombre").value;
 let correo = document.getElementById("correo").value;
 let contraseña = document.getElementById("contraseña").value;

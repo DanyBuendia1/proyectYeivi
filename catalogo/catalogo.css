@@ -22,5 +22,30 @@ div{
     text-align: center;
 }
 #information{
-    color: aliceblue;
+    margin: 0 auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*##### ESTILOS DEL BOTON ######*/
+#descarga{
+    margin: 10px;
+    padding: 1%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: solid;
+    border-radius: 15px;
+    background-color: rgb(244, 46, 46); 
+}
+/*##### ESTILOS DEL BOTON ######*/
+#nombre{
+    color: white;
+}
+#cerrar{
+    margin-left: 50px;
+    background-color: rgb(250, 39, 39);
+    color: white;
+    padding: 15px;
+    border: solid;
+    border-color: black;
+    border-radius: 15px;
 }
