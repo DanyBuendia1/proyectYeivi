@@ -45,7 +45,6 @@ span{
 
 section img{
     transition: .5s ease;
-    opacity: .5;
 }
 section img:hover{
     cursor: crosshair;

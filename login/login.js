@@ -23,7 +23,7 @@ function validacion(){
     
     for(let i =0; i<User.length; i++){
         if (User[i].email == this.correo.value && User[i].password == this.contraseña.value){
-            window.location="../perfil/perfil.html"
+            window.location="../catalogo/catalogo.html"
         }
     }
 

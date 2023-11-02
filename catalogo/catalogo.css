@@ -1,3 +1,26 @@
 body{
-  
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(8,5,1,1) 100%);
+    background-attachment: fixed;    
+}
+
+.card{
+width: 50%;
+height: 20%;
+margin: 10%;
+}
+
+section img{
+    transition: .5s ease;
+}
+section img:hover{
+    cursor: pointer;
+    width: 200px;
+}
+
+div{
+    text-align: center;
+}
+#information{
+    color: aliceblue;
 }

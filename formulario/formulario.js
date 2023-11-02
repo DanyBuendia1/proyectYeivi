@@ -1,12 +1,12 @@
-let Users = JSON.parse(localStorage.getItem("registros"));
 let registros =[];
-
+let Users = JSON.parse(localStorage.getItem("registros"));
+console.log(JSON.parse(localStorage.getItem("registros")));
 if(Users == null){
-   let registros = [];
+   Users = registros;
 }else{
-    Users = registros;
+    registros = Users;
 }
-
+console.log(Users);
 let nombre = document.getElementById("nombre").value;
 let correo = document.getElementById("correo").value;
 let contraseña = document.getElementById("contraseña").value;
@@ -28,19 +28,7 @@ login.addEventListener("click", ()=>{
 })
 // #####################################################
 
-// ################ REVELAR CONTRASEÑA ##################
-const revelar = document.getElementById("revelar");
-revelar.addEventListener("change", ()=>{
-    if(revelar.checked ==true){
-        this.contraseña.type = "text";
-        this.validador.type = "text";
-    }else{
-        this.contraseña.type = "password";
-        this.validador.type = "password";
-    
-    }
-})
-// ######################################################
+
 
 // ################ VALIDACION DE CAMPOS ###############
 function validar(){
@@ -55,6 +43,7 @@ function validar(){
     }else if(contraseña != validador){
         alert("Las contraseñas no coinciden, intente nuevamente")
     }else{
+
         almacenar();
     }
 }
@@ -62,7 +51,7 @@ function validar(){
 
 // ################ ALMACENAR REGISTROS #################
 function almacenar(){
-    datos = {
+  let datos = {
         name: this.nombre.value,
         email: this.correo.value,
         password: this.contraseña.value
@@ -71,6 +60,26 @@ function almacenar(){
     registros.push(datos);
     localStorage.setItem("Users" , JSON.stringify(registros));
     alert('tus datos fueron guardados exitosamente!!');
-    location.reload();
+    let confirmar = confirm('¡Quieres iniciar sesion?');
+
+    if(confirmar == true){
+        window.location="../login/login.html";
+    }else{
+        location.reload();
+    }
+
 }
 // #####################################################
+// ################ REVELAR CONTRASEÑA ##################
+const revelar = document.getElementById("revelar");
+revelar.addEventListener("change", ()=>{
+    if(revelar.checked ==true){
+        this.contraseña.type = "text";
+        this.validador.type = "text";
+    }else{
+        this.contraseña.type = "password";
+        this.validador.type = "password";
+    
+    }
+})
+// ######################################################
