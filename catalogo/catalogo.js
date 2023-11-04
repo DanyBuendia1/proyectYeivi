@@ -80,21 +80,7 @@ dbz.addEventListener("click",()=>{
     }
 })
 });
-dbzrepeat2.addEventListener("click",()=>{
-    this.information.innerHTML=`    
-    <h3>Dragon Ball Z</h3>
-    <img src="../img/dbz.jpg" alt=""><br>
-    <button id="descarga">Descargar</button>`
 
- let descarga = document.getElementById("descarga");
-    descarga.addEventListener("click", ()=>{
-    if(sesion !=null){
-    alert("Descarga exitosa");
-    }else{
-    alert("necesitas iniciar sesion para descargar algun producto!!!")
-    }
-})
-});
 dbzrepeat3.addEventListener("click",()=>{
     this.information.innerHTML=`    
     <h3>Dragon Ball Z</h3>
@@ -126,21 +112,7 @@ RE2.addEventListener("click",()=>{
     }
 })
 });
-RE2repit.addEventListener("click",()=>{
-    this.information.innerHTML=`    
-    <h3>Resident Evil 2</h3>
-    <img src="../img/RE2.jpg" alt=""><br>
-    <button id="descarga">Descargar</button>`
 
- let descarga = document.getElementById("descarga");
-    descarga.addEventListener("click", ()=>{
-    if(sesion !=null){
-    alert("Descarga exitosa");
-    }else{
-    alert("necesitas iniciar sesion para descargar algun producto!!!")
-    }
-})
-});
 
 CD.addEventListener("click",()=>{
     this.information.innerHTML=`    
@@ -174,37 +146,6 @@ RE3.addEventListener("click",()=>{
 })
 });
 
-Call.addEventListener("click",()=>{
-    this.information.innerHTML=`    
-    <h3>Call Of Duty </h3>
-    <img src="../img/Call.jpg" alt=""><br>
-    <button id="descarga">Descargar</button>`
-
- let descarga = document.getElementById("descarga");
-    descarga.addEventListener("click", ()=>{
-    if(sesion !=null){
-    alert("Descarga exitosa");
-    }else{
-    alert("necesitas iniciar sesion para descargar algun producto!!!")
-    }
-})
-});
-
-MK.addEventListener("click",()=>{
-    this.information.innerHTML=`    
-    <h3>Mortal Kombat</h3>
-    <img src="../img/MK.jpg" alt=""><br>
-    <button id="descarga">Descargar</button>`
-
- let descarga = document.getElementById("descarga");
-    descarga.addEventListener("click", ()=>{
-    if(sesion !=null){
-    alert("Descarga exitosa");
-    }else{
-    alert("necesitas iniciar sesion para descargar algun producto!!!")
-    }
-})
-});
 
 MKrepeat.addEventListener("click",()=>{
     this.information.innerHTML=`    
