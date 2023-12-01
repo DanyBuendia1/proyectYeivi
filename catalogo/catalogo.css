@@ -3,7 +3,10 @@ body{
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(8,5,1,1) 100%);
     background-attachment: fixed;    
 }
-
+.logo{
+    width: 5%;
+    border-radius: 50%;
+}
 .card{
 width: 50%;
 height: 20%;
@@ -23,7 +26,7 @@ div{
 }
 #information{
     color: white;
-    margin: 0 auto;
+    margin-top: 15%;
 }
 html{
     scroll-behavior: smooth;
